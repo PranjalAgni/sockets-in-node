@@ -7,12 +7,11 @@ const rl = readline.createInterface({ input, output });
 const client = new net.Socket();
 
 let isConnectionDone = false;
+
 rl.on("line", (line) => {
-  console.log("Line ", line);
   if (isConnectionDone) {
     client.write(line);
   }
-  rl.write("You gave me this?  " + line);
 });
 
 client.connect(config.PORT, config.HOST, () => {
@@ -22,7 +21,7 @@ client.connect(config.PORT, config.HOST, () => {
 });
 
 client.on("data", (data) => {
-  console.log("Recieved data: ", data);
+  console.log("Recieved data: ", data.toString());
   // client.destroy();
 });
 
