@@ -1,0 +1,20 @@
+{
+  "name": "sockets-in-node",
+  "version": "1.0.0",
+  "description": "General sockets programming in Node",
+  "main": "src/index.js",
+  "scripts": {
+    "server": "nodemon src/server.js",
+    "client": "nodemon src/client.js"
+  },
+  "keywords": [
+    "sockets",
+    "tcp",
+    "udp"
+  ],
+  "author": "PranjalAgni",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
