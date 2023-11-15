@@ -4,7 +4,7 @@
   "description": "General sockets programming in Node",
   "main": "src/index.js",
   "scripts": {
-    "server": "nodemon src/server.js &",
+    "server": "nodemon src/server.js",
     "client": "nodemon src/client.js",
     "start": "concurrently --raw \"npm:server\" \"npm:client\""
   },
