@@ -6,6 +6,7 @@
   "scripts": {
     "server": "nodemon src/server.js",
     "client": "nodemon src/client.js",
+    "client:bulk": "nodemon src/client-bulk-messages.js",
     "start": "concurrently --raw \"npm:server\" \"npm:client\""
   },
   "keywords": [
