@@ -36,7 +36,7 @@ for (let cid = 0; cid < NUM_CONNECTIONS; cid++) {
       Number(timeTook).toFixed(3)
     );
     // console.log("Recieved data: ", data.toString());
-    // client.destroy();
+    client.destroy();
   });
 
   client.on("close", () => {
