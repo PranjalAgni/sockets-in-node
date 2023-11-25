@@ -6,9 +6,7 @@ const config = require("./config");
 const rl = readline.createInterface({ input, output });
 
 rl.on("line", (line) => {
-  if (isConnectionDone) {
-    client.write(line);
-  }
+  client.write(line); 
 });
 
 const client = new net.Socket();
